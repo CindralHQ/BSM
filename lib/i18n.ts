@@ -27,6 +27,7 @@ export const dictionary = {
     ctaDownload: "Download PDF",
     ctaRead: "Read more",
     ctaSubmit: "Send enquiry",
+    ctaSubmitting: "Sending...",
     languageLabel: "Language",
     languageEnglish: "English",
     languageMarathi: "मराठी",
@@ -147,13 +148,15 @@ export const dictionary = {
     brandLetterhead: "Letterhead Template",
     contactTitle: "Contact",
     contactIntro:
-      "Choose the most relevant enquiry type. This demo does not send data to a server.",
+      "Choose the most relevant enquiry type. Submitted enquiries can be connected to the Mandal Google Sheet through the site config.",
     tabInquiry: "Inquiry",
     tabMembership: "Membership",
     tabHall: "Hall",
     tabSeva: "Seva",
     fieldName: "Full name",
     fieldContact: "Phone or email",
+    fieldPhone: "Phone number",
+    fieldEmail: "Email address",
     fieldMessage: "Message",
     fieldMemberType: "Membership interest",
     fieldEventType: "Event type",
@@ -162,7 +165,10 @@ export const dictionary = {
     fieldSevaInterest: "Seva interest",
     successTitle: "Enquiry prepared",
     successBody:
-      "This is a demo success state. A production site should connect this form to email, CRM, or a secure backend.",
+      "Thank you. Your enquiry has been submitted.",
+    errorTitle: "Form setup pending",
+    errorBody:
+      "Please add the Google Form response URL and entry IDs for this enquiry type in lib/siteConfig.ts before accepting enquiries.",
     footerLine: "Community, culture, hall enquiries, and seva initiatives in Nerul.",
     footerReplace: "All operational details are placeholders until confirmed by Bramhan Seva Mandal, Nerul."
   },
@@ -190,6 +196,7 @@ export const dictionary = {
     ctaDownload: "PDF डाउनलोड",
     ctaRead: "अधिक वाचा",
     ctaSubmit: "चौकशी पाठवा",
+    ctaSubmitting: "पाठवत आहे...",
     languageLabel: "भाषा",
     languageEnglish: "English",
     languageMarathi: "मराठी",
@@ -309,13 +316,15 @@ export const dictionary = {
     brandLetterhead: "लेटरहेड टेम्पलेट",
     contactTitle: "संपर्क",
     contactIntro:
-      "योग्य चौकशी प्रकार निवडा. हा नमुना फॉर्म सर्व्हरला माहिती पाठवत नाही.",
+      "योग्य चौकशी प्रकार निवडा. पाठवलेल्या चौकशा site config द्वारे मंडळाच्या Google Sheet शी जोडता येतील.",
     tabInquiry: "चौकशी",
     tabMembership: "सभासदत्व",
     tabHall: "सभागृह",
     tabSeva: "सेवा",
     fieldName: "पूर्ण नाव",
     fieldContact: "फोन किंवा ईमेल",
+    fieldPhone: "फोन नंबर",
+    fieldEmail: "ईमेल पत्ता",
     fieldMessage: "संदेश",
     fieldMemberType: "सभासदत्वाची आवड",
     fieldEventType: "कार्यक्रमाचा प्रकार",
@@ -324,7 +333,9 @@ export const dictionary = {
     fieldSevaInterest: "सेवेची आवड",
     successTitle: "चौकशी तयार झाली",
     successBody:
-      "ही नमुना यशस्वी स्थिती आहे. प्रत्यक्ष वेबसाइटमध्ये हा फॉर्म ईमेल, CRM किंवा सुरक्षित बॅकएंडशी जोडावा.",
+      "धन्यवाद. आपली चौकशी पाठवली आहे.",
+    errorTitle: "फॉर्म सेटअप बाकी आहे",
+    errorBody: "चौकशी स्वीकारण्यापूर्वी lib/siteConfig.ts मध्ये या चौकशी प्रकारासाठी Google Form response URL आणि entry IDs जोडा.",
     footerLine: "नेरुळमधील समुदाय, संस्कृती, सभागृह चौकशी आणि सेवा उपक्रम.",
     footerReplace: "सर्व कार्यात्मक तपशील ब्राह्मण सेवा मंडळ, नेरुळ कडून पुष्टी होईपर्यंत तात्पुरते आहेत."
   }

@@ -2,6 +2,7 @@
 
 import { Languages, MessageCircle } from "lucide-react";
 import { useLocale } from "@/components/LocaleProvider";
+import { getWhatsappUrl } from "@/lib/siteConfig";
 
 export function FloatingActions() {
   const { locale, setLocale, t } = useLocale();
@@ -19,7 +20,7 @@ export function FloatingActions() {
         <Languages size={21} />
         <span>{locale === "en" ? "मर" : "EN"}</span>
       </button>
-      <a className="fab whatsapp-fab" href="https://wa.me/" aria-label="WhatsApp" title="WhatsApp">
+      <a className="fab whatsapp-fab" href={getWhatsappUrl()} aria-label="WhatsApp" title="WhatsApp">
         <MessageCircle size={22} />
       </a>
     </div>
